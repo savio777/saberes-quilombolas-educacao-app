@@ -2,7 +2,7 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import {TabBarCustomized, Header} from '../components';
-import {Home, Presentation} from '../screens';
+import {Home, Presentation, ClassroomStrategies} from '../screens';
 
 const TabBar = createBottomTabNavigator();
 
@@ -27,6 +27,14 @@ const TabBarRoute = () => (
       options={{
         title: 'Presentation',
         header: () => <Header title="Apresentação" />,
+      }}
+    />
+    <TabBar.Screen
+      name="ClassroomStrategies"
+      component={ClassroomStrategies}
+      options={{
+        title: 'ClassroomStrategies',
+        header: () => <Header title="Estratégias para sala de aula" />,
       }}
     />
   </TabBar.Navigator>

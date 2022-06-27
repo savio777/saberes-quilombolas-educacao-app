@@ -19,6 +19,7 @@ export default () => {
   return (
     <Container>
       <Content>
+        <View style={{height: 20}} />
         <ContainerImage>
           <CupSvg width="30%" height={100} />
         </ContainerImage>
