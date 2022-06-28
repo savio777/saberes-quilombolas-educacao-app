@@ -38,7 +38,7 @@ const BannerClassroomStrategies: React.FC<Props> = ({
     imageStyle={{borderRadius: 15}}
     resizeMode="contain">
     <Content onPress={onPress}>
-      <Title>{title}</Title>
+      <Title numberOfLines={3}>{title}</Title>
       <Text numberOfLines={5}>{subTitle}</Text>
     </Content>
   </Container>

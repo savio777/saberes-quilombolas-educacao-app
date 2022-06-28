@@ -6,10 +6,8 @@ export const Container = styled.View`
   flex: 1;
   background-color: ${colors.white};
   align-items: center;
-  max-height: 80px;
+  max-height: 90px;
   min-height: 50px;
-
-  padding-bottom: 10px;
 `;
 
 export const Content = styled.View`
@@ -20,20 +18,18 @@ export const Content = styled.View`
 `;
 
 export const ContainerFlex = styled.View<{principal?: boolean}>`
-  flex: 1;
+  height: 100%;
+  justify-content: center;
 
   ${props =>
     props.principal
       ? css`
-          width: 100%;
-          max-width: 80%;
-          justify-content: flex-end;
+          width: 80%;
         `
       : css`
-          width: 100%;
-          max-width: 20%;
+          width: 20%;
           flex-direction: row;
-          align-items: flex-end;
+          align-items: center;
         `}
 `;
 

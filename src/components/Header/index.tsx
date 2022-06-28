@@ -14,7 +14,7 @@ const Header: React.FC<Props> = ({title}) => (
   <Container>
     <Content>
       <ContainerFlex principal>
-        <Title>{title}</Title>
+        <Title numberOfLines={2}>{title}</Title>
       </ContainerFlex>
       <ContainerFlex>
         <TouchableOpacity>

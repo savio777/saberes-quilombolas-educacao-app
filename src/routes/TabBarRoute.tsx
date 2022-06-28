@@ -2,7 +2,12 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import {TabBarCustomized, Header} from '../components';
-import {Home, Presentation, ClassroomStrategies} from '../screens';
+import {
+  Home,
+  Presentation,
+  ClassroomStrategies,
+  SignificantMethodologies,
+} from '../screens';
 
 const TabBar = createBottomTabNavigator();
 
@@ -35,6 +40,16 @@ const TabBarRoute = () => (
       options={{
         title: 'ClassroomStrategies',
         header: () => <Header title="Estratégias para sala de aula" />,
+      }}
+    />
+    <TabBar.Screen
+      name="SignificantMethodologies"
+      component={SignificantMethodologies}
+      options={{
+        title: 'SignificantMethodologies',
+        header: () => (
+          <Header title="Práticas pedagógicas e espaço escolar quilombola" />
+        ),
       }}
     />
   </TabBar.Navigator>
