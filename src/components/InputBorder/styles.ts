@@ -27,4 +27,5 @@ export const Title = styled.Text<{width?: number}>`
 export const Input = styled.TextInput`
   min-width: 100%;
   height: 100%;
+  color: black;
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Container, Content, Text, Title} from './styles';
 
-import GradientBlue from '../../assets/gradienta-unsplash-blue-1.jpg';
+import GradientBlue from '../../assets/gradienta-unsplash-blue-3.jpg';
 import GradientRed from '../../assets/gradienta-unsplash-red-1.jpg';
 import GradientPurple from '../../assets/gradienta-unsplash-purple-1.jpg';
 

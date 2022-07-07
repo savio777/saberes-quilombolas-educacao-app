@@ -7,6 +7,7 @@ import {
   Presentation,
   ClassroomStrategies,
   SignificantMethodologies,
+  KnowledgeLibrary,
 } from '../screens';
 
 const TabBar = createBottomTabNavigator();
@@ -49,6 +50,16 @@ const TabBarRoute = () => (
         title: 'SignificantMethodologies',
         header: () => (
           <Header title="Práticas pedagógicas e espaço escolar quilombola" />
+        ),
+      }}
+    />
+    <TabBar.Screen
+      name="KnowledgeLibrary"
+      component={KnowledgeLibrary}
+      options={{
+        title: 'KnowledgeLibrary',
+        header: () => (
+          <Header title="Coleções de textos sobre educação quilombola " />
         ),
       }}
     />
