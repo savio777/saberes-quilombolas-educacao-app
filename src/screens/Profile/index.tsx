@@ -27,7 +27,9 @@ export default () => {
         <Title>{carrer}</Title>
         <Title>TOTAL DE CONTEÚDOS SALVOS: {contentsCount}</Title>
         <Title>{carrer2}</Title>
-        <TextUnderlined>Editar informações</TextUnderlined>
+        <TouchableOpacity>
+          <TextUnderlined>Editar informações</TextUnderlined>
+        </TouchableOpacity>
       </View>
 
       <ButtonContentCenter>

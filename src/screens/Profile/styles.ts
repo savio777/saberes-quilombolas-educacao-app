@@ -22,6 +22,7 @@ export const Text = styled.Text`
 
 export const TextUnderlined = styled(Text)`
   text-decoration-line: underline;
+  margin-top: 10px;
 `;
 
 export const Title = styled(Text)`
