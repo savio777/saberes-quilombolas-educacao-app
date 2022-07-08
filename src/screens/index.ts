@@ -5,3 +5,4 @@ export {default as Presentation} from './Presentation';
 export {default as ClassroomStrategies} from './ClassroomStrategies';
 export {default as SignificantMethodologies} from './SignificantMethodologies';
 export {default as KnowledgeLibrary} from './KnowledgeLibrary';
+export {default as Profile} from './Profile';

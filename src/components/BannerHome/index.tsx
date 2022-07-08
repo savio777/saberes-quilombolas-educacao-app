@@ -11,8 +11,7 @@ import {
   Circle,
 } from './styles';
 
-const urlImageTest =
-  'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1122&q=80';
+import ImageSchoolBackground from '../../assets/background_school.jpeg';
 
 interface Props {
   title: string;
@@ -23,7 +22,7 @@ interface Props {
 
 const BannerHome: React.FC<Props> = ({onPress, subTitle, title, urlImage}) => (
   <Container
-    source={{uri: urlImage ? urlImage : urlImageTest}}
+    source={urlImage ? {uri: urlImage} : ImageSchoolBackground}
     imageStyle={{borderRadius: 15}}
     resizeMode="cover">
     <Content onPress={onPress}>

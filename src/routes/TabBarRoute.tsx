@@ -8,6 +8,7 @@ import {
   ClassroomStrategies,
   SignificantMethodologies,
   KnowledgeLibrary,
+  Profile,
 } from '../screens';
 
 const TabBar = createBottomTabNavigator();
@@ -24,8 +25,8 @@ const TabBarRoute = () => (
     <TabBar.Screen name="Saved" component={Home} options={{title: 'Salvos'}} />
     <TabBar.Screen
       name="Profile"
-      component={Home}
-      options={{title: 'Perfil'}}
+      component={Profile}
+      options={{title: 'Perfil', headerShown: false}}
     />
     <TabBar.Screen
       name="Presentation"

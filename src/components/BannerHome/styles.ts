@@ -16,10 +16,11 @@ export const Content = styled.TouchableOpacity`
 `;
 
 export const Text = styled.Text`
+  font-size: 16px;
   color: white;
-  text-shadow-color: rgba(0, 0, 0, 0.8);
-  text-shadow-offset: {width: -1px, height: 1px};
-  text-shadow-radius: 10px;
+  text-shadow-color: rgba(0, 0, 0);
+  text-shadow-offset: {width: 1px, height: 2px};
+  text-shadow-radius: 25px;
 `;
 
 export const Title = styled(Text)`
