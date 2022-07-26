@@ -9,6 +9,7 @@ import {
   SignificantMethodologies,
   KnowledgeLibrary,
   Profile,
+  LanguageSpace,
 } from '../screens';
 
 const TabBar = createBottomTabNavigator();
@@ -61,6 +62,16 @@ const TabBarRoute = () => (
         title: 'KnowledgeLibrary',
         header: () => (
           <Header title="Coleções de textos sobre educação quilombola " />
+        ),
+      }}
+    />
+    <TabBar.Screen
+      name="LanguageSpace"
+      component={LanguageSpace}
+      options={{
+        title: 'LanguageSpace',
+        header: () => (
+          <Header title="Materiais de apoio para construção de aulas ilustrativas e dinâmicas" />
         ),
       }}
     />

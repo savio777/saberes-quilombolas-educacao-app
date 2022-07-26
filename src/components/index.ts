@@ -8,3 +8,4 @@ export {default as Header} from './Header';
 export {default as BannerHome} from './BannerHome';
 export {default as BannerClassroomStrategies} from './BannerClassroomStrategies';
 export {default as BannerKnowledgeLibrary} from './BannerKnowledgeLibrary';
+export {default as BannerMovies} from './BannerMovies';
