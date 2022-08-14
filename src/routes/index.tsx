@@ -1,16 +1,18 @@
 import React from 'react';
-import {ActivityIndicator} from 'react-native';
+import {useSelector} from 'react-redux';
 
-import {useAuth} from '../AuthHooks/Auth';
 import SignOutStack from './SignOutStack';
 import SignedStack from './SignedStack';
+import {RootState} from '../store';
 
 export default () => {
-  const {loading, user} = useAuth();
+  const {logged} = useSelector((state: RootState) => state.auth);
 
+  /*
   if (loading) {
     return <ActivityIndicator />;
   }
+  */
 
-  return !user ? <SignOutStack /> : <SignedStack />;
+  return !logged ? <SignOutStack /> : <SignedStack />;
 };
