@@ -19,6 +19,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 
 import Auth from './modules/Auth';
+import Files from './modules/Files';
 
 const persistConfig = {
   key: 'root',
@@ -27,7 +28,7 @@ const persistConfig = {
   stateReconciler: autoMergeLevel2,
 };
 
-const rootReducer = combineReducers({auth: Auth});
+const rootReducer = combineReducers({auth: Auth, files: Files});
 
 export type RootState = ReturnType<typeof store.getState>;
 
