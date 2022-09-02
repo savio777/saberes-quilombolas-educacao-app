@@ -23,7 +23,11 @@ const TabBarRoute = () => (
       component={Home}
       options={{title: 'Início', header: () => <Header title="Início" />}}
     />
-    <TabBar.Screen name="Saved" component={Home} options={{title: 'Salvos'}} />
+    <TabBar.Screen
+      name="Saved"
+      component={Home}
+      options={{title: 'Salvos', header: () => <Header title="Salvos" />}}
+    />
     <TabBar.Screen
       name="Profile"
       component={Profile}
