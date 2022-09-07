@@ -15,16 +15,7 @@ import {
 import PersonEllipseMockupSvg from '../../assets/person-ellipse-mockup.svg';
 import {addFile} from '../../store/modules/Files';
 import {RootState} from '../../store';
-
-type IDocument = {
-  nativeStackAndroid: any[];
-  userInfo?: null | any;
-  message?: string;
-  code?: string;
-  line?: number;
-  column?: number;
-  sourceURL?: string;
-};
+import {isDocumentError} from '../../helpers/utils';
 
 export default () => {
   const dispatch = useDispatch();
@@ -34,10 +25,6 @@ export default () => {
   const [carrer, setCarrer] = useState('PROFESSOR 3° DISTRITO');
   const [carrer2, setCarrer2] = useState('Professor ensino médio');
   const [contentsCount, setContentsCount] = useState(22);
-
-  const isDocumentError = (err: any): err is IDocument => {
-    return typeof err?.line === 'number';
-  };
 
   const handleDocumentSelection = useCallback(async () => {
     try {
