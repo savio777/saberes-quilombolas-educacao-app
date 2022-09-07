@@ -21,6 +21,7 @@
     "react-native": "0.68.2",
     "react-native-blob-util": "^0.16.2",
     "react-native-document-picker": "^8.1.1",
+    "react-native-flipper": "^0.162.0",
     "react-native-gesture-handler": "^2.4.2",
     "react-native-pdf": "^6.6.2",
     "react-native-safe-area-context": "^4.3.1",
@@ -30,6 +31,7 @@
     "react-native-text-input-mask": "^3.1.4",
     "react-native-vector-icons": "^9.1.0",
     "react-redux": "^8.0.2",
+    "redux-flipper": "^2.0.2",
     "redux-persist": "^6.0.0",
     "styled-components": "^5.3.5",
     "uuidv4": "^5.0.1"

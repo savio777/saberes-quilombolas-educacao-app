@@ -5,16 +5,7 @@ import {
   ThunkAction,
 } from '@reduxjs/toolkit';
 import {useDispatch} from 'react-redux';
-import {
-  persistReducer,
-  persistStore,
-  FLUSH,
-  REHYDRATE,
-  PAUSE,
-  PERSIST,
-  PURGE,
-  REGISTER,
-} from 'redux-persist';
+import {persistReducer, persistStore} from 'redux-persist';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 
@@ -34,14 +25,25 @@ export type RootState = ReturnType<typeof store.getState>;
 
 const persistedReducer = persistReducer(persistConfig as any, rootReducer);
 
+const middleware = [];
+
+if (__DEV__) {
+  const createDebugger = require('redux-flipper').default;
+  const reduxFlipper = createDebugger();
+
+  middleware.push(reduxFlipper);
+}
+
 const store = configureStore({
   reducer: persistedReducer,
-  middleware: getDefaultMiddleware =>
+  middleware,
+  // actions async
+  /*middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
-    }),
+    }),*/
 });
 
 export default store;

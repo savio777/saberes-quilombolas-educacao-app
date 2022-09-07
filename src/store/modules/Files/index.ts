@@ -1,3 +1,4 @@
+import {Alert} from 'react-native';
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
 export interface IFiles {
@@ -15,7 +16,12 @@ const files = createSlice({
   initialState: [] as IStateReducer,
   reducers: {
     addFile(state, action: PayloadAction<{file: IFiles}>) {
-      state.push(action.payload.file);
+      try {
+        state.push(action.payload.file);
+        Alert.alert('Info', 'Arquivo salvo');
+      } catch (error) {
+        Alert.alert('Erro', 'Erro ao salvar arquivo');
+      }
     },
   },
 });
