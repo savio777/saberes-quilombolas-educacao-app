@@ -13,7 +13,7 @@ export default () => {
       <Content>
         <View style={{height: 70}} />
         <BannerClassroomStrategies
-          title="Mapas Mentais"
+          title="Mapas Explicativos"
           subTitle="Principais legislações educacionais relacionado as comunidades negras rurais."
           backgroundColor="red"
           onPress={() => navigate('SignificantMethodologies')}

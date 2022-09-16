@@ -10,6 +10,7 @@ import {
   KnowledgeLibrary,
   Profile,
   LanguageSpace,
+  Saved,
 } from '../screens';
 
 const TabBar = createBottomTabNavigator();
@@ -25,7 +26,7 @@ const TabBarRoute = () => (
     />
     <TabBar.Screen
       name="Saved"
-      component={Home}
+      component={Saved}
       options={{title: 'Salvos', header: () => <Header title="Salvos" />}}
     />
     <TabBar.Screen
