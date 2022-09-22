@@ -1,5 +1,5 @@
-import React from "react";
-import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
+import React from 'react';
+import {BottomTabBarProps} from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import {
@@ -7,26 +7,26 @@ import {
   TabBarContainer,
   TextTabBarCustomized,
   ButtonNavigation,
-} from "./styles";
+} from './styles';
 
 const getIconName = (titleScreen: string | undefined) => {
   switch (titleScreen) {
-    case "Início":
-      return "home";
-    case "Salvos":
-      return "bookmark-check";
-    case "Perfil":
-      return "account";
+    case 'Início':
+      return 'home';
+    case 'Salvos':
+      return 'bookmark-check';
+    case 'Perfil':
+      return 'account';
   }
 };
 
 const showScreenOnTabBar = (titleScreen: string | undefined) => {
   switch (titleScreen) {
-    case "Início":
+    case 'Início':
       return true;
-    case "Salvos":
+    case 'Salvos':
       return true;
-    case "Perfil":
+    case 'Perfil':
       return true;
     default:
       false;
@@ -36,13 +36,13 @@ const showScreenOnTabBar = (titleScreen: string | undefined) => {
 const switchPosition = (index: number) => {
   switch (index) {
     case 0:
-      return "left";
+      return 'left';
     case 1:
-      return "center";
+      return 'center';
     case 2:
-      return "right";
+      return 'right';
     default:
-      return "center";
+      return 'center';
   }
 };
 
@@ -54,19 +54,19 @@ const TabBarCustomized: React.FC<BottomTabBarProps> = ({
   <Container>
     <TabBarContainer>
       {state.routes.map((route, index) => {
-        const { title } = descriptors[route.key].options;
+        const {title} = descriptors[route.key].options;
 
         const isFocused = state.index === index;
 
         const onPress = () => {
           const event = navigation.emit({
-            type: "tabPress",
+            type: 'tabPress',
             target: route.key,
             canPreventDefault: true,
           });
 
           if (!isFocused && !event.defaultPrevented) {
-            navigation.navigate({ name: route.name, merge: true });
+            navigation.navigate({name: route.name, merge: true});
           }
         };
 
@@ -76,12 +76,11 @@ const TabBarCustomized: React.FC<BottomTabBarProps> = ({
               <ButtonNavigation
                 onPress={onPress}
                 key={String(index)}
-                position={switchPosition(index)}
-              >
+                position={switchPosition(index)}>
                 <MaterialCommunityIcons
                   name={getIconName(title)}
                   size={25}
-                  color={isFocused ? "rgba(0,0,0,0.9)" : "#595959"}
+                  color={isFocused ? 'rgba(0,0,0,0.9)' : '#595959'}
                 />
                 <TextTabBarCustomized>{title}</TextTabBarCustomized>
               </ButtonNavigation>

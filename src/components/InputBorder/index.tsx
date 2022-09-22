@@ -1,7 +1,7 @@
-import React from "react";
-import { TextInputProps } from "react-native";
+import React from 'react';
+import {TextInputProps} from 'react-native';
 
-import { Container, Input, Title } from "./styles";
+import {Container, Input, Title} from './styles';
 
 interface Props extends TextInputProps {
   title: string;

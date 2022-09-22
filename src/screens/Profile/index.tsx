@@ -16,6 +16,7 @@ import PersonEllipseMockupSvg from '../../assets/person-ellipse-mockup.svg';
 import {addFile} from '../../store/modules/Files';
 import {RootState} from '../../store';
 import {isDocumentError} from '../../helpers/utils';
+import ContainerKeyboardAvoidingView from '../../components/ContainerKeyboardAvoidingView';
 
 export default () => {
   const dispatch = useDispatch();
@@ -57,24 +58,26 @@ export default () => {
   }, []);
 
   return (
-    <Container>
-      <TouchableOpacity>
-        <PersonEllipseMockupSvg width={150} height={150} />
-      </TouchableOpacity>
-      <View>
-        <Title>{name}</Title>
-        <Title>{carrer}</Title>
-        <Title>TOTAL DE CONTEÚDOS SALVOS: {files.length}</Title>
-        <Title>{carrer2}</Title>
+    <ContainerKeyboardAvoidingView>
+      <Container>
         <TouchableOpacity>
-          <TextUnderlined>Editar informações</TextUnderlined>
+          <PersonEllipseMockupSvg width={150} height={150} />
         </TouchableOpacity>
-      </View>
+        <View>
+          <Title>{name}</Title>
+          <Title>{carrer}</Title>
+          <Title>TOTAL DE CONTEÚDOS SALVOS: {files.length}</Title>
+          <Title>{carrer2}</Title>
+          <TouchableOpacity>
+            <TextUnderlined>Editar informações</TextUnderlined>
+          </TouchableOpacity>
+        </View>
 
-      <ButtonContentCenter onPress={handleDocumentSelection}>
-        <Icon name="file-plus" size={50} color="black" />
-        <Text>Adicionar arquivos</Text>
-      </ButtonContentCenter>
-    </Container>
+        <ButtonContentCenter onPress={handleDocumentSelection}>
+          <Icon name="file-plus" size={50} color="black" />
+          <Text>Adicionar arquivos</Text>
+        </ButtonContentCenter>
+      </Container>
+    </ContainerKeyboardAvoidingView>
   );
 };
