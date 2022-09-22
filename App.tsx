@@ -15,7 +15,10 @@ export default function App() {
       <PersistGate loading={null} persistor={persistor}>
         <SafeAreaView style={{flex: 1, backgroundColor: colors.white}}>
           <NavigationContainer>
-            <StatusBar backgroundColor={colors.white} barStyle="dark-content" />
+            <StatusBar
+              backgroundColor={colors.gradient.dark}
+              barStyle="dark-content"
+            />
             <Routes />
           </NavigationContainer>
         </SafeAreaView>
