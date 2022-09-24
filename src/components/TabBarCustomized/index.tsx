@@ -8,6 +8,7 @@ import {
   TextTabBarCustomized,
   ButtonNavigation,
 } from './styles';
+import colors from '../../helpers/colors';
 
 const getIconName = (titleScreen: string | undefined) => {
   switch (titleScreen) {
@@ -80,7 +81,9 @@ const TabBarCustomized: React.FC<BottomTabBarProps> = ({
                 <MaterialCommunityIcons
                   name={getIconName(title)}
                   size={25}
-                  color={isFocused ? 'rgba(0,0,0,0.9)' : '#595959'}
+                  color={
+                    isFocused ? colors.iconColor.dark : colors.iconColor.medium
+                  }
                 />
                 <TextTabBarCustomized>{title}</TextTabBarCustomized>
               </ButtonNavigation>

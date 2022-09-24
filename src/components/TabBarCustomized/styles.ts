@@ -3,12 +3,11 @@ import styled, {css} from 'styled-components/native';
 import colors from '../../helpers/colors';
 
 export const Container = styled.View`
-  background-color: ${colors.gradient.light};
   padding: 10px;
 `;
 
 export const TabBarContainer = styled.View`
-  background-color: #ccc;
+  background-color: ${colors.gray};
   flex-direction: row;
   shadow-color: #000;
   shadow-opacity: 0.1;
