@@ -5,6 +5,8 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {Source} from 'react-native-pdf';
 
 import {IFiles} from '../../store/modules/Files';
+import colors from '../../helpers/colors';
+
 import {Container, PdfStyled, Header, Title, ButtonClose} from './styles';
 
 interface Props extends ModalProps {
@@ -21,7 +23,7 @@ const ViewPdf: React.FC<Props> = ({pdf, close, source, title, ...rest}) => {
         <Header>
           <Title>{title || pdf?.title}</Title>
           <ButtonClose onPress={close}>
-            <Icon name="close" size={25} />
+            <Icon name="close" size={25} color={colors.white} />
           </ButtonClose>
         </Header>
         <PdfStyled

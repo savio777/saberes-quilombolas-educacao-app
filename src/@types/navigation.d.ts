@@ -16,6 +16,7 @@ export declare global {
       SignificantMethodologies: undefined;
       KnowledgeLibrary: undefined;
       KnowledgeLibraryExplanatoryTable: undefined;
+      KnowledgeLibraryCurriculumOrganization: undefined;
       LanguageSpace: undefined;
     }
   }

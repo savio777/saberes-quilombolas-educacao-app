@@ -9,3 +9,4 @@ export {default as Profile} from './Profile';
 export {default as LanguageSpace} from './LanguageSpace';
 export {default as Saved} from './Saved';
 export {default as KnowledgeLibraryExplanatoryTable} from './KnowledgeLibraryExplanatoryTable';
+export {default as KnowledgeLibraryCurriculumOrganization} from './KnowledgeLibraryCurriculumOrganization';

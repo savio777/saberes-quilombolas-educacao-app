@@ -22,7 +22,7 @@ export default () => {
           title="Organização Currícular"
           subTitle="Proposta pedagógica"
           backgroundColor="blue"
-          onPress={() => navigate('SignificantMethodologies')}
+          onPress={() => navigate('KnowledgeLibraryCurriculumOrganization')}
         />
         <View style={{height: 50}} />
       </Content>

@@ -1,9 +1,11 @@
 import styled from 'styled-components/native';
 import Pdf from 'react-native-pdf';
 
+import colors from '../../helpers/colors';
+
 export const Container = styled.View`
   flex: 1;
-  background-color: gray;
+  background-color: ${colors.iconColor.dark};
   padding: 4px;
 `;
 
@@ -21,6 +23,7 @@ export const Header = styled.View`
 
 export const Title = styled.Text`
   font-weight: bold;
+  color: ${colors.white};
 `;
 
 export const ButtonClose = styled.TouchableOpacity`
@@ -30,5 +33,5 @@ export const ButtonClose = styled.TouchableOpacity`
   justify-content: center;
   border-radius: 15px;
   border-width: 1px;
-  border-color: rgba(0, 0, 0, 0.5);
+  border-color: ${colors.white};
 `;

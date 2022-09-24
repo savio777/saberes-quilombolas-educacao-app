@@ -12,6 +12,7 @@ import {
   LanguageSpace,
   Saved,
   KnowledgeLibraryExplanatoryTable,
+  KnowledgeLibraryCurriculumOrganization,
 } from '../screens';
 
 const TabBar = createBottomTabNavigator();
@@ -77,6 +78,14 @@ const TabBarRoute = () => (
       options={{
         title: 'KnowledgeLibraryExplanatoryTable',
         header: () => <Header title="Quadro Explicativo" />,
+      }}
+    />
+    <TabBar.Screen
+      name="KnowledgeLibraryCurriculumOrganization"
+      component={KnowledgeLibraryCurriculumOrganization}
+      options={{
+        title: 'KnowledgeLibraryCurriculumOrganization',
+        header: () => <Header title="Organização Currícular" />,
       }}
     />
     <TabBar.Screen
