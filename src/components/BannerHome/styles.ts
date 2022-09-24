@@ -10,17 +10,17 @@ export const Container = styled.ImageBackground`
 
 export const Content = styled.TouchableOpacity`
   flex-direction: row;
-  height: 98%;
+  height: 90%;
   width: 90%;
   align-items: flex-end;
 `;
 
 export const Text = styled.Text`
-  font-size: 16px;
+  font-size: 14px;
   color: white;
-  text-shadow-color: rgba(0, 0, 0);
-  text-shadow-offset: {width: 1px, height: 2px};
-  text-shadow-radius: 25px;
+  text-shadow-color: rgba(0, 0, 0, 0.9);
+  text-shadow-offset: {width: -1px, height: 1px};
+  text-shadow-radius: 10px;
 `;
 
 export const Title = styled(Text)`

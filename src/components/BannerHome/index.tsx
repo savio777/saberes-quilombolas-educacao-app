@@ -12,17 +12,18 @@ import {
 } from './styles';
 
 import ImageSchoolBackground from '../../assets/background_school.jpeg';
+import {ImageSourcePropType} from 'react-native';
 
 interface Props {
   title: string;
   subTitle: string;
-  urlImage?: string;
+  source?: ImageSourcePropType;
   onPress: () => void;
 }
 
-const BannerHome: React.FC<Props> = ({onPress, subTitle, title, urlImage}) => (
+const BannerHome: React.FC<Props> = ({onPress, subTitle, title, source}) => (
   <Container
-    source={urlImage ? {uri: urlImage} : ImageSchoolBackground}
+    source={source || ImageSchoolBackground}
     imageStyle={{borderRadius: 15}}
     resizeMode="cover">
     <Content onPress={onPress}>

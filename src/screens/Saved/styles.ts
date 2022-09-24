@@ -15,3 +15,10 @@ export const Content = styled.ScrollView`
   max-width: 90%;
   height: 90%;
 `;
+
+export const Title = styled.Text`
+  font-size: 18px;
+  text-align: center;
+  margin: 40px;
+  color: black;
+`;
