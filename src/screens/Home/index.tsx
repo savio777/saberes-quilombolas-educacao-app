@@ -63,7 +63,7 @@ export default () => {
           }}
         />
 
-        <View style={{height: 20}} />
+        <View style={{height: 100}} />
       </Content>
     </Container>
   );

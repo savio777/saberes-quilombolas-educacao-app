@@ -1,6 +1,9 @@
+import {ImageBackgroundProps} from 'react-native';
 import styled from 'styled-components/native';
 
-export const Container = styled.ImageBackground`
+export const Container = styled.ImageBackground.attrs({
+  imageStyle: {borderRadius: 15},
+} as ImageBackgroundProps)`
   height: 100%;
   width: 100%;
   max-height: 200px;

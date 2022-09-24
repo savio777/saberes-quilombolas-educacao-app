@@ -4,6 +4,7 @@ import colors from '../../helpers/colors';
 
 export const Container = styled.View`
   padding: 10px;
+  background-color: ${colors.white};
 `;
 
 export const TabBarContainer = styled.View`

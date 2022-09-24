@@ -22,10 +22,7 @@ interface Props {
 }
 
 const BannerHome: React.FC<Props> = ({onPress, subTitle, title, source}) => (
-  <Container
-    source={source || ImageSchoolBackground}
-    imageStyle={{borderRadius: 15}}
-    resizeMode="cover">
+  <Container source={source || ImageSchoolBackground} resizeMode="cover">
     <Content onPress={onPress}>
       <ContainerLeft>
         <Title>{title}</Title>
