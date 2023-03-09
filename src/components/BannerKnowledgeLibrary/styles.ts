@@ -1,9 +1,15 @@
-import styled from 'styled-components/native';
+import styled, {css} from 'styled-components/native';
 
-export const Container = styled.View`
-  width: 100%;
+export const Container = styled.View<{marginLeft?: boolean}>`
+  width: ${({marginLeft}) => (marginLeft ? '93%' : '100%')};
   flex-direction: row;
+
   margin-bottom: 20px;
+  ${({marginLeft}) =>
+    marginLeft &&
+    css`
+      margin-left: 20px;
+    `}
 `;
 
 export const ImageLeft = styled.Image`

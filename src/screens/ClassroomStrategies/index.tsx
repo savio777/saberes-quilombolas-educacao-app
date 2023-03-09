@@ -19,7 +19,7 @@ export default () => {
           onPress={() => navigate('KnowledgeLibraryExplanatoryTable')}
         />
         <BannerClassroomStrategies
-          title="Organização Currícular"
+          title="Organização Curricular"
           subTitle="Proposta pedagógica"
           backgroundColor="blue"
           onPress={() => navigate('KnowledgeLibraryCurriculumOrganization')}

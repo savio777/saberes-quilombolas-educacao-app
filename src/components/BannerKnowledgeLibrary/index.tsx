@@ -17,6 +17,7 @@ interface Props {
   text: string;
   onPress(): void;
   imageUrl?: string;
+  marginLeft?: boolean;
 }
 
 const BannerKnowledgeLibrary: React.FC<Props> = ({
@@ -24,8 +25,9 @@ const BannerKnowledgeLibrary: React.FC<Props> = ({
   text,
   title,
   imageUrl,
+  marginLeft,
 }) => (
-  <Container>
+  <Container marginLeft={marginLeft}>
     <ImageLeft source={imageUrl ? {uri: imageUrl} : ImageWoman} />
     <ContentRight>
       <Title>{title}</Title>
