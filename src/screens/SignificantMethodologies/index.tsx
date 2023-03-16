@@ -19,17 +19,19 @@ export default () => {
           onPress={() => navigate('KnowledgeLibrary')}
         />
         <BannerClassroomStrategies
-          title="Sequência didáticas"
+          title="Organizações didáticas"
           subTitle="Sequências didáticas para Ensino Fundamental II"
           backgroundColor="blue"
           onPress={() => navigate('KnowledgeLibrary')}
         />
+        {/*
         <BannerClassroomStrategies
           title="Explanação de recursos didáticos e linguagens"
           subTitle="A utilização de recursos didáticos que favorecessem o estudo da História das comunidades"
           backgroundColor="purple"
           onPress={() => navigate('KnowledgeLibrary')}
         />
+        */}
         <View style={{height: 50}} />
       </Content>
     </Container>

@@ -54,8 +54,8 @@ export default () => {
         />
 
         <BannerHome
-          title="Materiais de apoio para construção de aulas ilustrativas e dinâmicas"
-          subTitle="Atividades complementares que utilizam linguagens visuais como o cinema, boxes de textos e imagens e indicações de vídeos e filmes"
+          title="Materiais de apoio e recursos didáticos para ensino de História"
+          subTitle="Explanação de diferentes recursos didáticos e materiais para ensino de História afro-brasileira para as comunidades quilombolas"
           source={AulaBackground2}
           onPress={() => {
             // por enquanto somente para testar novas telas
