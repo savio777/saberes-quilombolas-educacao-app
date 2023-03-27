@@ -36,7 +36,7 @@ export default () => {
         />
 
         <BannerHome
-          title="Práticas pedagógicas e espaço escolar quilombola"
+          title="Organizações pedagógicas para educação escolar quilombola"
           subTitle="(Ensino Fundamental II) (Desenvolvimento de planos de trabalho docente e avaliação, demonstrações de sequências didáticas e a explanação de diferentes recursos didáticos e linguagens, que favorecessem o estudo da História das comunidades quilombolas)."
           onPress={() => {
             // por enquanto somente para testar novas telas
@@ -54,7 +54,7 @@ export default () => {
         />
 
         <BannerHome
-          title="Materiais de apoio e recursos didáticos para ensino de História"
+          title="Recursos didáticos para o ensino de História"
           subTitle="Explanação de diferentes recursos didáticos e materiais para ensino de História afro-brasileira para as comunidades quilombolas"
           source={AulaBackground2}
           onPress={() => {

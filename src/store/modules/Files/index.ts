@@ -23,10 +23,13 @@ const files = createSlice({
         Alert.alert('Erro', 'Erro ao salvar arquivo');
       }
     },
+    cleanFiles(state) {
+      state.splice(0, state.length);
+    },
   },
 });
 
-export const {addFile} = files.actions;
+export const {addFile, cleanFiles} = files.actions;
 
 export default files.reducer;
 
