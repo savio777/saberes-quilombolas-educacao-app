@@ -14,6 +14,7 @@ import {
   Saved,
   KnowledgeLibraryExplanatoryTable,
   KnowledgeLibraryCurriculumOrganization,
+  DidacticResourcesSupportMaterials,
 } from '../screens';
 import {cleanFiles} from '../store/modules/Files';
 
@@ -60,6 +61,16 @@ const TabBarRoute = () => {
         options={{
           title: 'ClassroomStrategies',
           header: () => <Header title="Estratégias para sala de aula" />,
+        }}
+      />
+      <TabBar.Screen
+        name="DidacticResourcesSupportMaterials"
+        component={DidacticResourcesSupportMaterials}
+        options={{
+          title: 'DidacticResourcesSupportMaterials',
+          header: () => (
+            <Header title="Recursos didáticos e Materiais de apoio" />
+          ),
         }}
       />
       <TabBar.Screen

@@ -18,6 +18,7 @@ export declare global {
       KnowledgeLibraryExplanatoryTable: undefined;
       KnowledgeLibraryCurriculumOrganization: undefined;
       LanguageSpace: undefined;
+      DidacticResourcesSupportMaterials: undefined;
     }
   }
 }

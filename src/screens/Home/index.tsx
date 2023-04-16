@@ -63,6 +63,16 @@ export default () => {
           }}
         />
 
+        <BannerHome
+          title="Recursos didáticos e Materiais de apoio"
+          subTitle=""
+          source={AulaBackground2}
+          onPress={() => {
+            // por enquanto somente para testar novas telas
+            navigate('DidacticResourcesSupportMaterials');
+          }}
+        />
+
         <View style={{height: 100}} />
       </Content>
     </Container>
