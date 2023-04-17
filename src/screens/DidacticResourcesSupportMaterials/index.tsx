@@ -20,7 +20,7 @@ export default () => {
         />
         <BannerClassroomStrategies
           title="Materiais de apoio"
-          subTitle=""
+          subTitle="Explanação de diferentes recursos didáticos e materiais para ensino de História afro-brasileira para as comunidades quilombolas"
           backgroundColor="blue"
           onPress={() => navigate('KnowledgeLibraryCurriculumOrganization')}
         />

@@ -69,7 +69,7 @@ const TabBarRoute = () => {
         options={{
           title: 'DidacticResourcesSupportMaterials',
           header: () => (
-            <Header title="Recursos didáticos e Materiais de apoio" />
+            <Header title="Materiais de apoio para educação escolar quilombola do Maranhão" />
           ),
         }}
       />

@@ -21,6 +21,18 @@ import Orientações from '../../assets/pdfs/matrizes_curriculares/parte_03/Orie
 import proposta_quilombola from '../../assets/pdfs/matrizes_curriculares/parte_03/proposta_quilombola.pdf';
 import Roteiro_de_aula_para_educação_quilombola from '../../assets/pdfs/matrizes_curriculares/parte_03/Roteiro_de_aula_para_educação_quilombola.pdf';
 
+// organizacoes_didaticas
+import Caderno_Pedagógico_para_a_educação_escolar_quilombola from '../../assets/pdfs/organizacoes_didaticas/Caderno_Pedagógico_para_a_educação_escolar_quilombola.pdf';
+import Oficina_para_organização_do_semestre from '../../assets/pdfs/organizacoes_didaticas/Oficina_para_organização_do_semestre.pdf';
+import Sequência_05_ensino_descolonial_na_perspectiva_da_disciplina_de_História from '../../assets/pdfs/organizacoes_didaticas/Sequência_05_ensino_descolonial_na_perspectiva_da_disciplina_de_História.pdf';
+import Sequência_07_Quilombos from '../../assets/pdfs/organizacoes_didaticas/Sequência_07_Quilombos.pdf';
+import Sequência_didática_01_reconhecimento from '../../assets/pdfs/organizacoes_didaticas/Sequência_didática_01_reconhecimento.pdf';
+import Sequência_didática_02_como_utilização_gamificação_em_sala_de_aula from '../../assets/pdfs/organizacoes_didaticas/Sequência_didática_02_como_utilização_gamificação_em_sala_de_aula.pdf';
+import Sequência_didática_03_Identificação from '../../assets/pdfs/organizacoes_didaticas/Sequência_didática_03_Identificação.pdf';
+import Sequência_didática_04_Identificação from '../../assets/pdfs/organizacoes_didaticas/Sequência_didática_04_Identificação.pdf';
+import Sequência_sobre_prenconceito from '../../assets/pdfs/organizacoes_didaticas/Sequência_sobre_prenconceito.pdf';
+import sequência_06_sobre_as_terras_quilombolas_e_seu_uso from '../../assets/pdfs/organizacoes_didaticas/sequência_06_sobre_as_terras_quilombolas_e_seu_uso.pdf';
+
 import {Container, Content} from './styles';
 
 export default () => {
@@ -29,6 +41,7 @@ export default () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
 
   const [propostaCurricular3, setPropostaCurricular3] = useState(false);
+  const [organizacoesDidaticas, setorganizacoesDidaticas] = useState(false);
 
   const openModal = (pdf: Source, title: string) => {
     setSelectedPdf(pdf);
@@ -167,6 +180,133 @@ export default () => {
                 openModal(
                   Roteiro_de_aula_para_educação_quilombola,
                   'Roteiro de aula para educação quilombola',
+                )
+              }
+            />
+          </>
+        )}
+
+        <Folder
+          title="Organizações didáticas"
+          isOpen={organizacoesDidaticas}
+          onPress={() => setorganizacoesDidaticas(!organizacoesDidaticas)}
+        />
+
+        {organizacoesDidaticas && (
+          <>
+            <BannerKnowledgeLibrary
+              marginLeft
+              title="Caderno Pedagógico para a educação escolarquilombola"
+              text=""
+              onPress={() =>
+                openModal(
+                  Caderno_Pedagógico_para_a_educação_escolar_quilombola,
+                  'Caderno Pedagógico para a educação escolarquilombola',
+                )
+              }
+            />
+
+            <BannerKnowledgeLibrary
+              marginLeft
+              title="Oficina para organização do semestre"
+              text=""
+              onPress={() =>
+                openModal(
+                  Oficina_para_organização_do_semestre,
+                  'Oficina para organização do semestre',
+                )
+              }
+            />
+
+            <BannerKnowledgeLibrary
+              marginLeft
+              title="Sequência 05 ensino descolonial na perspectiva da disciplina de História"
+              text=""
+              onPress={() =>
+                openModal(
+                  Sequência_05_ensino_descolonial_na_perspectiva_da_disciplina_de_História,
+                  'Sequência 05 ensino descolonial na perspectiva da disciplina de História',
+                )
+              }
+            />
+
+            <BannerKnowledgeLibrary
+              marginLeft
+              title="Sequência 07 Quilombos"
+              text=""
+              onPress={() =>
+                openModal(Sequência_07_Quilombos, 'Sequência 07 Quilombos')
+              }
+            />
+
+            <BannerKnowledgeLibrary
+              marginLeft
+              title="Sequência didática 01 reconhecimento"
+              text=""
+              onPress={() =>
+                openModal(
+                  Sequência_didática_01_reconhecimento,
+                  'Sequência didática 01 reconhecimento',
+                )
+              }
+            />
+
+            <BannerKnowledgeLibrary
+              marginLeft
+              title="Sequência didática 02 como utilização gamificação em sala de aula"
+              text=""
+              onPress={() =>
+                openModal(
+                  Sequência_didática_02_como_utilização_gamificação_em_sala_de_aula,
+                  'Sequência didática 02 como utilização gamificação em sala de aula',
+                )
+              }
+            />
+
+            <BannerKnowledgeLibrary
+              marginLeft
+              title="Sequência didática 03 Identificação"
+              text=""
+              onPress={() =>
+                openModal(
+                  Sequência_didática_03_Identificação,
+                  'Sequência didática 03 Identificação',
+                )
+              }
+            />
+
+            <BannerKnowledgeLibrary
+              marginLeft
+              title="Sequência didática 04 Identificação"
+              text=""
+              onPress={() =>
+                openModal(
+                  Sequência_didática_04_Identificação,
+                  'Sequência didática 04 Identificação',
+                )
+              }
+            />
+
+            <BannerKnowledgeLibrary
+              marginLeft
+              title="Sequência sobre prenconceito"
+              text=""
+              onPress={() =>
+                openModal(
+                  Sequência_sobre_prenconceito,
+                  'Sequência sobre prenconceito',
+                )
+              }
+            />
+
+            <BannerKnowledgeLibrary
+              marginLeft
+              title="Sequência 06 sobre as terras quilombolas e seu uso"
+              text=""
+              onPress={() =>
+                openModal(
+                  sequência_06_sobre_as_terras_quilombolas_e_seu_uso,
+                  'sequência 06 sobre as terras quilombolas e seu uso',
                 )
               }
             />

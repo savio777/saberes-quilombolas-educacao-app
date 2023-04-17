@@ -36,4 +36,5 @@ export const Content = styled.ScrollView.attrs(() => ({
   border-radius: 10px;
   border-color: ${colors.black};
   padding: 20px;
+  margin-top: 50px;
 `;

@@ -64,7 +64,7 @@ export default () => {
         />
 
         <BannerHome
-          title="Recursos didáticos e Materiais de apoio"
+          title="Materiais de apoio para educação escolar quilombola do Maranhão"
           subTitle=""
           source={AulaBackground2}
           onPress={() => {
