@@ -6,32 +6,77 @@ import {BannerKnowledgeLibrary} from '../../components';
 import ViewPdf from '../../components/ViewPdf';
 import Folder from '../../components/Folder';
 
-import Parte_01_Questões_iniciais_da_Proposta_Curricular from '../../assets/pdfs/matrizes_curriculares/Parte_01_Questões_iniciais_da_Proposta_Curricular.pdf';
-import Parte_02_Proposta_Pedagogica from '../../assets/pdfs/matrizes_curriculares/Parte_02_Proposta_Pedagogica.pdf';
+const Parte_01_Questões_iniciais_da_Proposta_Curricular = {
+  uri: 'bundle-assets://pdfs/matrizes_curriculares/Parte_01_Questões_iniciais_da_Proposta_Curricular.pdf',
+};
+const Parte_02_Proposta_Pedagogica = {
+  uri: 'bundle-assets://pdfs/matrizes_curriculares/Parte_02_Proposta_Pedagogica.pdf',
+};
 
 // parte 03
-import Caderno_de_Orientações_Pedagógicas from '../../assets/pdfs/matrizes_curriculares/parte_03/Caderno_de_Orientações_Pedagógicas.pdf';
-import Caderno_Política_de_Educação_EScolar_Quilombola_NEQUI from '../../assets/pdfs/matrizes_curriculares/parte_03/Caderno_Política_de_Educação_EScolar_Quilombola_NEQUI.pdf';
-import Caderno_Quilombola from '../../assets/pdfs/matrizes_curriculares/parte_03/Caderno_Quilombola.pdf';
-import Diretrizes_Curriculares_Estaduais_para_Educação_Escolar_Quilombola from '../../assets/pdfs/matrizes_curriculares/parte_03/Diretrizes_Curriculares_Estaduais_para_Educação_Escolar_Quilombola.pdf';
-import Documento_Curricular_do_Território_do_Maranhão from '../../assets/pdfs/matrizes_curriculares/parte_03/Documento_Curricular_do_Território_do_Maranhão.pdf';
-import Matriz_Curricular_01 from '../../assets/pdfs/matrizes_curriculares/parte_03/Matriz_Curricular_01.pdf';
-import Matriz_Curricular_02_com_base_na_BNCC from '../../assets/pdfs/matrizes_curriculares/parte_03/Matriz_Curricular_02_com_base_na_BNCC.pdf';
-import Orientações from '../../assets/pdfs/matrizes_curriculares/parte_03/Orientações.pdf';
-import proposta_quilombola from '../../assets/pdfs/matrizes_curriculares/parte_03/proposta_quilombola.pdf';
-import Roteiro_de_aula_para_educação_quilombola from '../../assets/pdfs/matrizes_curriculares/parte_03/Roteiro_de_aula_para_educação_quilombola.pdf';
+const Caderno_de_Orientações_Pedagógicas = {
+  uri: 'bundle-assets://pdfs/matrizes_curriculares/parte_03/Caderno_de_Orientações_Pedagógicas.pdf',
+};
+const Caderno_Política_de_Educação_EScolar_Quilombola_NEQUI = {
+  uri: 'bundle-assets://pdfs/matrizes_curriculares/parte_03/Caderno_Política_de_Educação_EScolar_Quilombola_NEQUI.pdf',
+};
+const Caderno_Quilombola = {
+  uri: 'bundle-assets://pdfs/matrizes_curriculares/parte_03/Caderno_Quilombola.pdf',
+};
+const Diretrizes_Curriculares_Estaduais_para_Educação_Escolar_Quilombola = {
+  uri: 'bundle-assets://pdfs/matrizes_curriculares/parte_03/Diretrizes_Curriculares_Estaduais_para_Educação_Escolar_Quilombola.pdf',
+};
+const Documento_Curricular_do_Território_do_Maranhão = {
+  uri: 'bundle-assets://pdfs/matrizes_curriculares/parte_03/Documento_Curricular_do_Território_do_Maranhão.pdf',
+};
+const Matriz_Curricular_01 = {
+  uri: 'bundle-assets://pdfs/matrizes_curriculares/parte_03/Matriz_Curricular_01.pdf',
+};
+const Matriz_Curricular_02_com_base_na_BNCC = {
+  uri: 'bundle-assets://pdfs/matrizes_curriculares/parte_03/Matriz_Curricular_02_com_base_na_BNCC.pdf',
+};
+const Orientações = {
+  uri: 'bundle-assets://pdfs/matrizes_curriculares/parte_03/Orientações.pdf',
+};
+const proposta_quilombola = {
+  uri: 'bundle-assets://pdfs/matrizes_curriculares/parte_03/proposta_quilombola.pdf',
+};
+const Roteiro_de_aula_para_educação_quilombola = {
+  uri: 'bundle-assets://pdfs/matrizes_curriculares/parte_03/Roteiro_de_aula_para_educação_quilombola.pdf',
+};
 
 // organizacoes_didaticas
-import Caderno_Pedagógico_para_a_educação_escolar_quilombola from '../../assets/pdfs/organizacoes_didaticas/Caderno_Pedagógico_para_a_educação_escolar_quilombola.pdf';
-import Oficina_para_organização_do_semestre from '../../assets/pdfs/organizacoes_didaticas/Oficina_para_organização_do_semestre.pdf';
-import Sequência_05_ensino_descolonial_na_perspectiva_da_disciplina_de_História from '../../assets/pdfs/organizacoes_didaticas/Sequência_05_ensino_descolonial_na_perspectiva_da_disciplina_de_História.pdf';
-import Sequência_07_Quilombos from '../../assets/pdfs/organizacoes_didaticas/Sequência_07_Quilombos.pdf';
-import Sequência_didática_01_reconhecimento from '../../assets/pdfs/organizacoes_didaticas/Sequência_didática_01_reconhecimento.pdf';
-import Sequência_didática_02_como_utilização_gamificação_em_sala_de_aula from '../../assets/pdfs/organizacoes_didaticas/Sequência_didática_02_como_utilização_gamificação_em_sala_de_aula.pdf';
-import Sequência_didática_03_Identificação from '../../assets/pdfs/organizacoes_didaticas/Sequência_didática_03_Identificação.pdf';
-import Sequência_didática_04_Identificação from '../../assets/pdfs/organizacoes_didaticas/Sequência_didática_04_Identificação.pdf';
-import Sequência_sobre_prenconceito from '../../assets/pdfs/organizacoes_didaticas/Sequência_sobre_prenconceito.pdf';
-import sequência_06_sobre_as_terras_quilombolas_e_seu_uso from '../../assets/pdfs/organizacoes_didaticas/sequência_06_sobre_as_terras_quilombolas_e_seu_uso.pdf';
+const Caderno_Pedagógico_para_a_educação_escolar_quilombola = {
+  uri: 'bundle-assets://pdfs/organizacoes_didaticas/Caderno_Pedagógico_para_a_educação_escolar_quilombola.pdf',
+};
+const Oficina_para_organização_do_semestre = {
+  uri: 'bundle-assets://pdfs/organizacoes_didaticas/Oficina_para_organização_do_semestre.pdf',
+};
+const Sequência_05_ensino_descolonial_na_perspectiva_da_disciplina_de_História =
+  {
+    uri: 'bundle-assets://pdfs/organizacoes_didaticas/Sequência_05_ensino_descolonial_na_perspectiva_da_disciplina_de_História.pdf',
+  };
+const Sequência_07_Quilombos = {
+  uri: 'bundle-assets://pdfs/organizacoes_didaticas/Sequência_07_Quilombos.pdf',
+};
+const Sequência_didática_01_reconhecimento = {
+  uri: 'bundle-assets://pdfs/organizacoes_didaticas/Sequência_didática_01_reconhecimento.pdf',
+};
+const Sequência_didática_02_como_utilização_gamificação_em_sala_de_aula = {
+  uri: 'bundle-assets://pdfs/organizacoes_didaticas/Sequência_didática_02_como_utilização_gamificação_em_sala_de_aula.pdf',
+};
+const Sequência_didática_03_Identificação = {
+  uri: 'bundle-assets://pdfs/organizacoes_didaticas/Sequência_didática_03_Identificação.pdf',
+};
+const Sequência_didática_04_Identificação = {
+  uri: 'bundle-assets://pdfs/organizacoes_didaticas/Sequência_didática_04_Identificação.pdf',
+};
+const Sequência_sobre_prenconceito = {
+  uri: 'bundle-assets://pdfs/organizacoes_didaticas/Sequência_sobre_prenconceito.pdf',
+};
+const sequência_06_sobre_as_terras_quilombolas_e_seu_uso = {
+  uri: 'bundle-assets://pdfs/organizacoes_didaticas/sequência_06_sobre_as_terras_quilombolas_e_seu_uso.pdf',
+};
 
 import {Container, Content} from './styles';
 

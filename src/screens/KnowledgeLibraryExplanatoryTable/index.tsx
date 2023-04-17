@@ -7,26 +7,65 @@ import ViewPdf from '../../components/ViewPdf';
 import Folder from '../../components/Folder';
 import {Container, Content} from './styles';
 
-import QuadroExplicativoPdf01 from '../../assets/pdfs/Quadro_Explicativo_01.pdf';
-import QuadroExplicativoPdf02 from '../../assets/pdfs/Quadro_Explicativo_02.pdf';
-import QuadroExplicativoPdf03 from '../../assets/pdfs/Quadro_Explicativo_03.pdf';
-import QuadroExplicativoPdf04 from '../../assets/pdfs/Quadro_Explicativo_04.pdf';
-import QuadroExplicativoPdf05 from '../../assets/pdfs/Quadro_Explicativo_05.pdf';
-import QuadroExplicativoPdf06 from '../../assets/pdfs/Quadro_Explicativo_06.pdf';
-import QuadroExplicativoPdf07 from '../../assets/pdfs/Quadro_Explicativo_07.pdf';
-import QuadroExplicativoPdf08 from '../../assets/pdfs/Quadro_Explicativo_08.pdf';
-import QuadroExplicativoPdf09 from '../../assets/pdfs/Quadro_Explicativo_09.pdf';
+const QuadroExplicativoPdf01 = {
+  uri: 'bundle-assets://pdfs/Quadro_Explicativo_01.pdf',
+};
+const QuadroExplicativoPdf02 = {
+  uri: 'bundle-assets://pdfs/Quadro_Explicativo_02.pdf',
+};
+const QuadroExplicativoPdf03 = {
+  uri: 'bundle-assets://pdfs/Quadro_Explicativo_03.pdf',
+};
+const QuadroExplicativoPdf04 = {
+  uri: 'bundle-assets://pdfs/Quadro_Explicativo_04.pdf',
+};
+const QuadroExplicativoPdf05 = {
+  uri: 'bundle-assets://pdfs/Quadro_Explicativo_05.pdf',
+};
+const QuadroExplicativoPdf06 = {
+  uri: 'bundle-assets://pdfs/Quadro_Explicativo_06.pdf',
+};
+const QuadroExplicativoPdf07 = {
+  uri: 'bundle-assets://pdfs/Quadro_Explicativo_07.pdf',
+};
+const QuadroExplicativoPdf08 = {
+  uri: 'bundle-assets://pdfs/Quadro_Explicativo_08.pdf',
+};
+const QuadroExplicativoPdf09 = {
+  uri: 'bundle-assets://pdfs/Quadro_Explicativo_09.pdf',
+};
 
-import PlanodeAula08anoQuilombosnoBrasil from '../../assets/pdfs/planos_de_aula/PlanodeAula08anoQuilombosnoBrasil.pdf';
-import PlanodeAula09Anoreconheciemntodacomunidade from '../../assets/pdfs/planos_de_aula/PlanodeAula09Anoreconheciemntodacomunidade.pdf';
-import PlanodeAula_SujeitossociaiseinteressesenvolvidosnaaboliçãodaescravidãonoBrasil from '../../assets/pdfs/planos_de_aula/PlanodeAula_SujeitossociaiseinteressesenvolvidosnaaboliçãodaescravidãonoBrasil.pdf';
-import Planodeaulaparadiscussãosobreopreconceito from '../../assets/pdfs/planos_de_aula/Planodeaulaparadiscussãosobreopreconceito.pdf';
-import PlanodeaulasobreBrincadeiraafricana from '../../assets/pdfs/planos_de_aula/PlanodeaulasobreBrincadeiraafricana.pdf';
-import PlanodeaulasobreRacismo from '../../assets/pdfs/planos_de_aula/PlanodeaulasobreRacismo.pdf';
-import Planodeaulasobreformaderegistros from '../../assets/pdfs/planos_de_aula/Planodeaulasobreformaderegistros.pdf';
-import Planodeaulasobreidentidadesquilombolas from '../../assets/pdfs/planos_de_aula/Planodeaulasobreidentidadesquilombolas.pdf';
-import Planodeaulasobreformaçãoculturaldospovos from '../../assets/pdfs/planos_de_aula/Planodeaulasobreformaçãoculturaldospovos.pdf';
-import Planodeaulasobrerelacõesétnicoraciais from '../../assets/pdfs/planos_de_aula/Planodeaulasobrerelacõesétnicoraciais.pdf';
+const PlanodeAula08anoQuilombosnoBrasil = {
+  uri: 'bundle-assets://pdfs/planos_de_aula/PlanodeAula08anoQuilombosnoBrasil.pdf',
+};
+const PlanodeAula09Anoreconheciemntodacomunidade = {
+  uri: 'bundle-assets://pdfs/planos_de_aula/PlanodeAula09Anoreconheciemntodacomunidade.pdf',
+};
+const PlanodeAula_SujeitossociaiseinteressesenvolvidosnaaboliçãodaescravidãonoBrasil =
+  {
+    uri: 'bundle-assets://pdfs/planos_de_aula/PlanodeAula_SujeitossociaiseinteressesenvolvidosnaaboliçãodaescravidãonoBrasil.pdf',
+  };
+const Planodeaulaparadiscussãosobreopreconceito = {
+  uri: 'bundle-assets://pdfs/planos_de_aula/Planodeaulaparadiscussãosobreopreconceito.pdf',
+};
+const PlanodeaulasobreBrincadeiraafricana = {
+  uri: 'bundle-assets://pdfs/planos_de_aula/PlanodeaulasobreBrincadeiraafricana.pdf',
+};
+const PlanodeaulasobreRacismo = {
+  uri: 'bundle-assets://pdfs/planos_de_aula/PlanodeaulasobreRacismo.pdf',
+};
+const Planodeaulasobreformaderegistros = {
+  uri: 'bundle-assets://pdfs/planos_de_aula/Planodeaulasobreformaderegistros.pdf',
+};
+const Planodeaulasobreidentidadesquilombolas = {
+  uri: 'bundle-assets://pdfs/planos_de_aula/Planodeaulasobreidentidadesquilombolas.pdf',
+};
+const Planodeaulasobreformaçãoculturaldospovos = {
+  uri: 'bundle-assets://pdfs/planos_de_aula/Planodeaulasobreformaçãoculturaldospovos.pdf',
+};
+const Planodeaulasobrerelacõesétnicoraciais = {
+  uri: 'bundle-assets://pdfs/planos_de_aula/Planodeaulasobrerelacõesétnicoraciais.pdf',
+};
 
 export default () => {
   const [selectedPdf, setSelectedPdf] = useState<Source | undefined>();
