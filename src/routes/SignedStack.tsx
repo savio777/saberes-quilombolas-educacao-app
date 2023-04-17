@@ -8,7 +8,7 @@ const Stack = createNativeStackNavigator();
 
 const SignOutStack: React.FC = () => (
   <Stack.Navigator screenOptions={{headerShown: false}}>
-    <Stack.Screen name="Tutorial" component={TutorialRoute} />
+    {/*<Stack.Screen name="Tutorial" component={TutorialRoute} />*/}
     <Stack.Screen name="TabBarRoute" component={TabBarRoute} />
   </Stack.Navigator>
 );

@@ -79,12 +79,21 @@ const Roteiro_de_aula_para_educação_quilombola = {
   uri: 'bundle-assets://pdfs/matrizes_curriculares/parte_03/Roteiro_de_aula_para_educação_quilombola.pdf',
 };
 
+//planos de aula
+const Plano_de_aula_sobre_Brincadeira_africana = {
+  uri: 'bundle-assets://pdfs/matrizes_curriculares/part_two/Plano_de_aula_sobre_Brincadeira_africana.pdf',
+};
+const Plano_de_aula_sobre_relacoes_etnico_raciais = {
+  uri: 'bundle-assets://pdfs/matrizes_curriculares/part_two/Plano_de_aula_sobre_relacoes_etnico_raciais.pdf',
+};
+
 export default () => {
   const [selectedPdf, setSelectedPdf] = useState<Source | undefined>();
   const [selectedPdfTitle, setSelectedPdfTitle] = useState('');
   const [isOpenModal, setIsOpenModal] = useState(false);
 
   const [organizacaoDidatica, setOrganizacaoDidatica] = useState(false);
+  const [planosAulas, setPlanosAulas] = useState(false);
 
   const openModal = (pdf: Source, title: string) => {
     setSelectedPdf(pdf);
@@ -336,6 +345,40 @@ export default () => {
                 openModal(
                   Roteiro_de_aula_para_educação_quilombola,
                   'Roteiro de aula para educação quilombola',
+                )
+              }
+            />
+          </>
+        )}
+
+        <Folder
+          title="Planos de trabalho docente"
+          isOpen={planosAulas}
+          onPress={() => setPlanosAulas(!planosAulas)}
+        />
+
+        {planosAulas && (
+          <>
+            <BannerKnowledgeLibrary
+              marginLeft
+              title="Plano de aula sobre Brincadeiras africana"
+              text=""
+              onPress={() =>
+                openModal(
+                  Plano_de_aula_sobre_Brincadeira_africana,
+                  'Plano de aula sobre Brincadeira africana',
+                )
+              }
+            />
+
+            <BannerKnowledgeLibrary
+              marginLeft
+              title="Plano de aula sobre relações étnico-raciais"
+              text=""
+              onPress={() =>
+                openModal(
+                  Plano_de_aula_sobre_relacoes_etnico_raciais,
+                  'Plano de aula sobre relações étnico-raciais',
                 )
               }
             />

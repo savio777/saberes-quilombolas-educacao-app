@@ -11,6 +11,10 @@ const Sugestoes_de_musicas_documentarios_e_podcat = {
   uri: 'bundle-assets://pdfs/part_four/Sugestoes_de_musicas_documentarios_e_podcat.pdf',
 };
 
+const Minha_mae_e_negra_sim = {
+  uri: 'bundle-assets://pdfs/part_four/Minha_mae_e_negra_sim.pdf',
+};
+
 export default () => {
   const [selectedPdf, setSelectedPdf] = useState<Source | undefined>();
   const [selectedPdfTitle, setSelectedPdfTitle] = useState('');
@@ -30,7 +34,7 @@ export default () => {
         <View style={{height: 70}} />
 
         <Folder
-          title="Organizações didáticos"
+          title="Recursos didáticos"
           isOpen={organizacaoDidatica}
           onPress={() => setOrganizacaoDidatica(!organizacaoDidatica)}
         />
@@ -46,6 +50,15 @@ export default () => {
                   Sugestoes_de_musicas_documentarios_e_podcat,
                   'Sugestões de músicas, documentarios e podcat',
                 )
+              }
+            />
+
+            <BannerKnowledgeLibrary
+              marginLeft
+              title="Minha mãe e negra sim"
+              text=""
+              onPress={() =>
+                openModal(Minha_mae_e_negra_sim, 'Minha mãe e negra sim')
               }
             />
           </>

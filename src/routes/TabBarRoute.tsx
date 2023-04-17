@@ -130,7 +130,7 @@ const TabBarRoute = () => {
         options={{
           title: 'PartTwo',
           header: () => (
-            <Header title="Organização didática para o espaço escolar quilombola" />
+            <Header title="Organização didática para o espaço escolar do ensino fundamental II" />
           ),
         }}
       />
@@ -149,7 +149,7 @@ const TabBarRoute = () => {
         component={PartFour}
         options={{
           title: 'PartFour',
-          header: () => <Header title="Organizações didáticos" />,
+          header: () => <Header title="Recursos didáticos" />,
         }}
       />
 

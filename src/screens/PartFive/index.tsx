@@ -48,12 +48,12 @@ export default () => {
           <>
             <BannerKnowledgeLibrary
               marginLeft
-              title="Artigo sobre a educacao escolar quilombola no Maranhao"
+              title="Artigo sobre a educação escolar quilombola no Maranhão"
               text=""
               onPress={() =>
                 openModal(
                   Artigo_sobre_a_educacao_escolar_quilombola_no_Maranhao,
-                  'Artigo sobre a educacao escolar quilombola no Maranhao',
+                  'Artigo sobre a educação escolar quilombola no Maranhão',
                 )
               }
             />
@@ -72,12 +72,12 @@ export default () => {
 
             <BannerKnowledgeLibrary
               marginLeft
-              title="PRATICA PEDAGOGICA EM ESCOLAS DE COMUNIDADES QUILOMBOLAS DO MARANHAO"
+              title="PRÁTICA PEDAGÓGICA EM ESCOLAS DE COMUNIDADES QUILOMBOLAS DO MARANHÃO"
               text=""
               onPress={() =>
                 openModal(
                   PRATICA_PEDAGOGICA_EM_ESCOLAS_DE_COMUNIDADES_QUILOMBOLAS_DO_MARANHAO,
-                  'PRATICA PEDAGOGICA EM ESCOLAS DE COMUNIDADES QUILOMBOLAS DO MARANHAO',
+                  'PRÁTICA PEDAGÓGICA EM ESCOLAS DE COMUNIDADES QUILOMBOLAS DO MARANHÃO',
                 )
               }
             />
