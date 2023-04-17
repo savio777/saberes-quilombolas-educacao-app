@@ -15,6 +15,10 @@ import {
   KnowledgeLibraryExplanatoryTable,
   KnowledgeLibraryCurriculumOrganization,
   DidacticResourcesSupportMaterials,
+  PartTwo,
+  PartFive,
+  PartFour,
+  PartThree,
 } from '../screens';
 import {cleanFiles} from '../store/modules/Files';
 
@@ -117,6 +121,44 @@ const TabBarRoute = () => {
           header: () => (
             <Header title="Materiais de apoio para construção de aulas ilustrativas e dinâmicas" />
           ),
+        }}
+      />
+
+      <TabBar.Screen
+        name="PartTwo"
+        component={PartTwo}
+        options={{
+          title: 'PartTwo',
+          header: () => (
+            <Header title="Organização didática para o espaço escolar quilombola" />
+          ),
+        }}
+      />
+
+      <TabBar.Screen
+        name="PartThree"
+        component={PartThree}
+        options={{
+          title: 'PartThree',
+          header: () => <Header title="Coleções de texto" />,
+        }}
+      />
+
+      <TabBar.Screen
+        name="PartFour"
+        component={PartFour}
+        options={{
+          title: 'PartFour',
+          header: () => <Header title="Organizações didáticos" />,
+        }}
+      />
+
+      <TabBar.Screen
+        name="PartFive"
+        component={PartFive}
+        options={{
+          title: 'PartFive',
+          header: () => <Header title="Materiais de apoio" />,
         }}
       />
     </TabBar.Navigator>

@@ -19,8 +19,8 @@ export default () => {
           onPress={() => navigate('KnowledgeLibraryExplanatoryTable')}
         />
         <BannerClassroomStrategies
-          title="Materiais de apoio"
-          subTitle="Explanação de diferentes recursos didáticos e materiais para ensino de História afro-brasileira para as comunidades quilombolas"
+          title="Organizações didáticas"
+          subTitle="Organizações didáticas para Ensino Fundamental II"
           backgroundColor="blue"
           onPress={() => navigate('KnowledgeLibraryCurriculumOrganization')}
         />

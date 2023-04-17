@@ -21,7 +21,7 @@ const ViewPdf: React.FC<Props> = ({pdf, close, source, title, ...rest}) => {
     <Modal {...rest} presentationStyle="fullScreen">
       <Container>
         <Header>
-          <Title>{title || pdf?.title}</Title>
+          <Title numberOfLines={1}>{title || pdf?.title}</Title>
           <ButtonClose onPress={close}>
             <Icon name="close" size={25} color={colors.white} />
           </ButtonClose>

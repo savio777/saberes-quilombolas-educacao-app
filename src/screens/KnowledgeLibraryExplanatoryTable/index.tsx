@@ -87,7 +87,7 @@ export default () => {
         <View style={{height: 70}} />
 
         <Folder
-          title="Quadro Explicativo"
+          title="Quadros Explicativos"
           isOpen={quadroExplicativo}
           onPress={() => setQuadroExplicativo(!quadroExplicativo)}
         />
@@ -164,136 +164,6 @@ export default () => {
               text=""
               onPress={() =>
                 openModal(QuadroExplicativoPdf09, 'Quadro explicativo 09')
-              }
-            />
-          </>
-        )}
-
-        <Folder
-          title="Planos de aula"
-          isOpen={planosDeAula}
-          onPress={() => setPlanosDeAula(!planosDeAula)}
-        />
-
-        {planosDeAula && (
-          <>
-            <BannerKnowledgeLibrary
-              marginLeft
-              title="Plano de Aula 08 ano Quilombos no Brasil"
-              text=""
-              onPress={() =>
-                openModal(
-                  PlanodeAula08anoQuilombosnoBrasil,
-                  'Plano de Aula 08 ano Quilombos no Brasil',
-                )
-              }
-            />
-
-            <BannerKnowledgeLibrary
-              marginLeft
-              title="Plano de Aula 09 Ano reconheciemnto da comunidade"
-              text=""
-              onPress={() =>
-                openModal(
-                  PlanodeAula09Anoreconheciemntodacomunidade,
-                  'Plano de Aula 09 Ano reconheciemnto da comunidade',
-                )
-              }
-            />
-
-            <BannerKnowledgeLibrary
-              marginLeft
-              title="Plano de Aula Sujeitos sociais e interesses envolvidos na abolição da escravidão no Brasil"
-              text=""
-              onPress={() =>
-                openModal(
-                  PlanodeAula_SujeitossociaiseinteressesenvolvidosnaaboliçãodaescravidãonoBrasil,
-                  'Plano de Aula Sujeitos sociais e interesses envolvidos na abolição da escravidão no Brasil',
-                )
-              }
-            />
-
-            <BannerKnowledgeLibrary
-              marginLeft
-              title="Plano de aula para discussão sobre o preconceito"
-              text=""
-              onPress={() =>
-                openModal(
-                  Planodeaulaparadiscussãosobreopreconceito,
-                  'Plano de aula para discussão sobre o preconceito',
-                )
-              }
-            />
-
-            <BannerKnowledgeLibrary
-              marginLeft
-              title="Plano de aula sobre Brincadeira africana"
-              text=""
-              onPress={() =>
-                openModal(
-                  PlanodeaulasobreBrincadeiraafricana,
-                  'Plano de aula sobre Brincadeira africana',
-                )
-              }
-            />
-
-            <BannerKnowledgeLibrary
-              marginLeft
-              title="Plano de aula sobre Racismo"
-              text=""
-              onPress={() =>
-                openModal(
-                  PlanodeaulasobreRacismo,
-                  'Plano de aula sobre Racismo',
-                )
-              }
-            />
-
-            <BannerKnowledgeLibrary
-              marginLeft
-              title="Plano de aula sobre forma de registros"
-              text=""
-              onPress={() =>
-                openModal(
-                  Planodeaulasobreformaderegistros,
-                  'Plano de aula sobre forma de registros',
-                )
-              }
-            />
-
-            <BannerKnowledgeLibrary
-              marginLeft
-              title="Plano de aula sobre identidades quilombolas"
-              text=""
-              onPress={() =>
-                openModal(
-                  Planodeaulasobreidentidadesquilombolas,
-                  'Plano de aula sobre identidades quilombolas',
-                )
-              }
-            />
-
-            <BannerKnowledgeLibrary
-              marginLeft
-              title="Plano de aula sobre formação cultural dos povos"
-              text=""
-              onPress={() =>
-                openModal(
-                  Planodeaulasobreformaçãoculturaldospovos,
-                  'Plano de aula sobre formação cultural dos povos',
-                )
-              }
-            />
-
-            <BannerKnowledgeLibrary
-              marginLeft
-              title="Plano de aula sobre relacões étnico raciais"
-              text=""
-              onPress={() =>
-                openModal(
-                  Planodeaulasobrerelacõesétnicoraciais,
-                  'Plano de aula sobre relacões étnico raciais',
-                )
               }
             />
           </>

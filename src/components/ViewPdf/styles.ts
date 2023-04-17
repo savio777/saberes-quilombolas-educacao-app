@@ -24,6 +24,7 @@ export const Header = styled.View`
 export const Title = styled.Text`
   font-weight: bold;
   color: ${colors.white};
+  max-width: 80%;
 `;
 
 export const ButtonClose = styled.TouchableOpacity`

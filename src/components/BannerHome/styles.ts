@@ -21,7 +21,7 @@ export const Content = styled.TouchableOpacity`
 export const Text = styled.Text`
   font-size: 14px;
   color: white;
-  text-shadow-color: rgba(0, 0, 0, 0.9);
+  text-shadow-color: rgba(0, 0, 0, 1);
   text-shadow-offset: {width: -1px, height: 1px};
   text-shadow-radius: 10px;
 `;

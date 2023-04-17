@@ -11,3 +11,7 @@ export {default as Saved} from './Saved';
 export {default as KnowledgeLibraryExplanatoryTable} from './KnowledgeLibraryExplanatoryTable';
 export {default as KnowledgeLibraryCurriculumOrganization} from './KnowledgeLibraryCurriculumOrganization';
 export {default as DidacticResourcesSupportMaterials} from './DidacticResourcesSupportMaterials';
+export {default as PartTwo} from './PartTwo';
+export {default as PartThree} from './PartThree';
+export {default as PartFour} from './PartFour';
+export {default as PartFive} from './PartFive';
