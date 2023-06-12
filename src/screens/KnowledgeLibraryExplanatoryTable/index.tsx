@@ -96,74 +96,101 @@ export default () => {
           <>
             <BannerKnowledgeLibrary
               marginLeft
-              title="Quadro explicativo 01"
+              title="Descrições conceituais do artigo 68 “Ato das disposições constitucionais transitórias”, Constituição Federal 1988."
               text=""
               onPress={() =>
-                openModal(QuadroExplicativoPdf01, 'Quadro explicativo 01')
+                openModal(
+                  QuadroExplicativoPdf01,
+                  'Descrições conceituais do artigo 68 “Ato das disposições constitucionais transitórias”, Constituição Federal 1988.',
+                )
               }
             />
             <BannerKnowledgeLibrary
               marginLeft
-              title="Quadro explicativo 02"
+              title="Art. 215. O Estado garantirá a todos o pleno exercício dos direitos culturais e acesso às fontes da cultura nacional, e apoiará e incentivará a valorização e a difusão das manifestações culturais."
               text=""
               onPress={() =>
-                openModal(QuadroExplicativoPdf02, 'Quadro explicativo 02')
+                openModal(
+                  QuadroExplicativoPdf02,
+                  'Art. 215. O Estado garantirá a todos o pleno exercício dos direitos culturais e acesso às fontes da cultura nacional, e apoiará e incentivará a valorização e a difusão das manifestações culturais.',
+                )
               }
             />
             <BannerKnowledgeLibrary
               marginLeft
-              title="Quadro explicativo 03"
+              title="PORTARIA FCP N.o 98, DE 26 DE NOVEMBRO DE 2007"
               text=""
               onPress={() =>
-                openModal(QuadroExplicativoPdf03, 'Quadro explicativo 03')
+                openModal(
+                  QuadroExplicativoPdf03,
+                  'PORTARIA FCP N.o 98, DE 26 DE NOVEMBRO DE 2007',
+                )
               }
             />
             <BannerKnowledgeLibrary
               marginLeft
-              title="Quadro explicativo 04"
+              title="CONVENÇÃO N° 169 DA OIT SOBRE POVOS INDÍGENAS E TRIBAIS"
               text=""
               onPress={() =>
-                openModal(QuadroExplicativoPdf04, 'Quadro explicativo 04')
+                openModal(
+                  QuadroExplicativoPdf04,
+                  'CONVENÇÃO N° 169 DA OIT SOBRE POVOS INDÍGENAS E TRIBAIS',
+                )
               }
             />
             <BannerKnowledgeLibrary
               marginLeft
-              title="Quadro explicativo 05"
+              title="DECRETO N.o 6.040, DE 7 DE FEVEREIRO DE 2007"
               text=""
               onPress={() =>
-                openModal(QuadroExplicativoPdf05, 'Quadro explicativo 05')
+                openModal(
+                  QuadroExplicativoPdf05,
+                  'DECRETO N.o 6.040, DE 7 DE FEVEREIRO DE 2007',
+                )
               }
             />
             <BannerKnowledgeLibrary
               marginLeft
-              title="Quadro explicativo 06"
+              title="LEI No 9.394, DE 20 DE DEZEMBRO DE 1996"
               text=""
               onPress={() =>
-                openModal(QuadroExplicativoPdf06, 'Quadro explicativo 06')
+                openModal(
+                  QuadroExplicativoPdf06,
+                  'LEI No 9.394, DE 20 DE DEZEMBRO DE 1996',
+                )
               }
             />
             <BannerKnowledgeLibrary
               marginLeft
-              title="Quadro explicativo 07"
+              title="Parecer CNE/CP no 3, de 10 de março de 2004/ CNE/CEB no 2/2007- Educação das Relações Étnico-raciais"
               text=""
               onPress={() =>
-                openModal(QuadroExplicativoPdf07, 'Quadro explicativo 07')
+                openModal(
+                  QuadroExplicativoPdf07,
+                  'Parecer CNE/CP no 3, de 10 de março de 2004/ CNE/CEB no 2/2007- Educação das Relações Étnico-raciais',
+                )
               }
             />
             <BannerKnowledgeLibrary
               marginLeft
-              title="Quadro explicativo 08"
+              title="Resolução CNE/CEB no 8, de 2012: Diretrizes para Educação Escolar Quilombola"
               text=""
               onPress={() =>
-                openModal(QuadroExplicativoPdf08, 'Quadro explicativo 08')
+                openModal(
+                  QuadroExplicativoPdf08,
+                  'Resolução CNE/CEB no 8, de 2012: Diretrizes para Educação Escolar Quilombola',
+                )
               }
             />
             <BannerKnowledgeLibrary
               marginLeft
-              title="Quadro explicativo 09"
+              title="Resolução No 189/2020- Diretrizes Para Educação Escolar Quilombola Na Educação Básica Do Maranhão."
               text=""
               onPress={() =>
-                openModal(QuadroExplicativoPdf09, 'Quadro explicativo 09')
+                openModal(
+                  QuadroExplicativoPdf09,
+                  'Resolução No 189/2020- Diretrizes Para Educação Escolar Quilombola Na Educação Básica Do Maranhão.',
+                )
               }
             />
           </>

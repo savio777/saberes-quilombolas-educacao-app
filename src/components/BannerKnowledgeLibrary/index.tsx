@@ -30,7 +30,7 @@ const BannerKnowledgeLibrary: React.FC<Props> = ({
   <Container marginLeft={marginLeft}>
     <ImageLeft source={imageUrl ? {uri: imageUrl} : ImageWoman} />
     <ContentRight>
-      <Title>{title}</Title>
+      <Title numberOfLines={2}>{title}</Title>
       <Text numberOfLines={3}>{text}</Text>
       <ContainerButton onPress={onPress}>
         <TextButton>Saiba Mais</TextButton>
