@@ -19,10 +19,6 @@ const Reorganizacao_da_Educacao_quilombola_para_qualidade = {
   uri: 'bundle-assets://pdfs/part_three/Reorganizacao_da_Educacao_quilombola_para_qualidade.pdf',
 };
 
-const Sequencia_didatica_01_reconhecimento = {
-  uri: 'bundle-assets://pdfs/part_three/Sequencia_didatica_01_reconhecimento.pdf',
-};
-
 // parte 03
 const Caderno_de_Orientações_Pedagógicas = {
   uri: 'bundle-assets://pdfs/matrizes_curriculares/parte_03/Caderno_de_Orientações_Pedagógicas.pdf',
@@ -51,10 +47,6 @@ const Roteiro_de_aula_para_educação_quilombola = {
 };
 
 const Caderno_Pedagogico_para_a_educacao_escolar_quilombola = {
-  uri: 'bundle-assets://pdfs/part_two/Caderno_Pedagogico_para_a_educação_escolar_quilombola.pdf',
-};
-
-const Oficina_para_organizacao_do_semestre = {
   uri: 'bundle-assets://pdfs/part_two/Caderno_Pedagogico_para_a_educacao_escolar_quilombola.pdf',
 };
 
@@ -119,36 +111,12 @@ export default () => {
 
             <BannerKnowledgeLibrary
               marginLeft
-              title="Sequencia didatica 01 reconhecimento"
-              text=""
-              onPress={() =>
-                openModal(
-                  Sequencia_didatica_01_reconhecimento,
-                  'Sequencia didatica 01 reconhecimento',
-                )
-              }
-            />
-
-            <BannerKnowledgeLibrary
-              marginLeft
               title="Caderno Pedagógico para a educacao escolar quilombola"
               text=""
               onPress={() =>
                 openModal(
                   Caderno_Pedagogico_para_a_educacao_escolar_quilombola,
                   'Caderno Pedagógico para a educacao escolar quilombola',
-                )
-              }
-            />
-
-            <BannerKnowledgeLibrary
-              marginLeft
-              title="Oficina para organização do semestre"
-              text=""
-              onPress={() =>
-                openModal(
-                  Oficina_para_organizacao_do_semestre,
-                  'Oficina para organização do semestre',
                 )
               }
             />
